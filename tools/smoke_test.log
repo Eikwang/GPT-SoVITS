@@ -1,0 +1,30 @@
+Starting memory leak test. host=127.0.0.1 port=9881 duration=30s mode=get streaming=True
+ref_audio_path=小雨的旁白
+Initial /memory_status ok=True stats={"memory_info": {"memory_info": {"rss_mb": 2869.1953125, "vms_mb": 6974.8671875, "wset_mb": 2869.1953125, "private_mb": 6974.8671875, "pagefile_mb": 6974.8671875, "uss_mb": 2664.33203125, "gpu_mb": 1262.69970703125, "gpu_allocated_mb": 1262.69970703125, "gpu_reserved_mb": 1426.0, "pid": 18204}, "threshold_mb": 3500, "last_cleanup_time": 1760404816.4046662, "should_cleanup": true, "cleanup_interval": 30}}
+[MEM] ok=True stats={"memory_info": {"memory_info": {"rss_mb": 2869.48828125, "vms_mb": 6975.421875, "wset_mb": 2869.48828125, "private_mb": 6975.421875, "pagefile_mb": 6975.421875, "uss_mb": 2664.578125, "gpu_mb": 1262.69970703125, "gpu_allocated_mb": 1262.69970703125, "gpu_reserved_mb": 1426.0, "pid": 18204}, "threshold_mb": 3500, "last_cleanup_time": 1760404887.9434822, "should_cleanup": false, "cleanup_interval": 30}}
+[MEM] ok=True stats={"memory_info": {"memory_info": {"rss_mb": 2869.5546875, "vms_mb": 6975.421875, "wset_mb": 2869.5546875, "private_mb": 6975.421875, "pagefile_mb": 6975.421875, "uss_mb": 2664.64453125, "gpu_mb": 1262.69970703125, "gpu_allocated_mb": 1262.69970703125, "gpu_reserved_mb": 1426.0, "pid": 18204}, "threshold_mb": 3500, "last_cleanup_time": 1760404892.9339557, "should_cleanup": false, "cleanup_interval": 30}}
+[MEM] ok=True stats={"memory_info": {"memory_info": {"rss_mb": 2869.5625, "vms_mb": 6975.421875, "wset_mb": 2869.5625, "private_mb": 6975.421875, "pagefile_mb": 6975.421875, "uss_mb": 2664.65234375, "gpu_mb": 1262.69970703125, "gpu_allocated_mb": 1262.69970703125, "gpu_reserved_mb": 1426.0, "pid": 18204}, "threshold_mb": 3500, "last_cleanup_time": 1760404897.8722227, "should_cleanup": false, "cleanup_interval": 30}}
+[MEM] ok=True stats={"memory_info": {"memory_info": {"rss_mb": 2869.578125, "vms_mb": 6975.421875, "wset_mb": 2869.578125, "private_mb": 6975.421875, "pagefile_mb": 6975.421875, "uss_mb": 2664.66796875, "gpu_mb": 1262.69970703125, "gpu_allocated_mb": 1262.69970703125, "gpu_reserved_mb": 1426.0, "pid": 18204}, "threshold_mb": 3500, "last_cleanup_time": 1760404903.4189675, "should_cleanup": false, "cleanup_interval": 30}}
+[MEM] ok=True stats={"memory_info": {"memory_info": {"rss_mb": 2869.578125, "vms_mb": 6975.421875, "wset_mb": 2869.578125, "private_mb": 6975.421875, "pagefile_mb": 6975.421875, "uss_mb": 2664.66796875, "gpu_mb": 1262.69970703125, "gpu_allocated_mb": 1262.69970703125, "gpu_reserved_mb": 1426.0, "pid": 18204}, "threshold_mb": 3500, "last_cleanup_time": 1760404908.3042958, "should_cleanup": false, "cleanup_interval": 30}}
+Manual cleanup ok=True result={"status": "success", "message": "Memory cleanup completed", "freed_memory_mb": 0.0}
+Final /memory_status ok=True stats={"memory_info": {"memory_info": {"rss_mb": 2869.58203125, "vms_mb": 6975.38671875, "wset_mb": 2869.58203125, "private_mb": 6975.38671875, "pagefile_mb": 6975.38671875, "uss_mb": 2664.65234375, "gpu_mb": 1262.69970703125, "gpu_allocated_mb": 1262.69970703125, "gpu_reserved_mb": 1426.0, "pid": 18204}, "threshold_mb": 3500, "last_cleanup_time": 1760404914.582301, "should_cleanup": false, "cleanup_interval": 30}}
+Requests success=51 errors=0
+Latency avg=0.903s p50=0.791s p90=1.379s p99=1.417s
+CPU system avg=4.6% peak=9.6% | process avg=2.6% peak=9.4%
+Top 10 tracemalloc diffs:
+C:\ProgramData\miniconda3\Lib\urllib\parse.py:864: size=4656 B (+4656 B), count=4 (+4), average=1164 B
+C:\Users\admin\AppData\Roaming\Python\Python313\site-packages\psutil\_pswindows.py:291: size=2712 B (+2712 B), count=99 (+99), average=27 B
+C:\ProgramData\miniconda3\Lib\site-packages\urllib3\poolmanager.py:230: size=2704 B (+2704 B), count=23 (+23), average=118 B
+C:\ProgramData\miniconda3\Lib\site-packages\urllib3\poolmanager.py:400: size=2280 B (+2280 B), count=19 (+19), average=120 B
+C:\ProgramData\miniconda3\Lib\site-packages\requests\adapters.py:489: size=2040 B (+2040 B), count=17 (+17), average=120 B
+C:\ProgramData\miniconda3\Lib\urllib\parse.py:871: size=1760 B (+1760 B), count=40 (+40), average=44 B
+C:\ProgramData\miniconda3\Lib\threading.py:297: size=1520 B (+1520 B), count=4 (+4), average=380 B
+D:\AI\GPT-SoVITS\tools\memory_leak_test.py:139: size=1472 B (+1472 B), count=45 (+45), average=33 B
+C:\ProgramData\miniconda3\Lib\json\decoder.py:361: size=1403 B (+1403 B), count=30 (+30), average=47 B
+C:\ProgramData\miniconda3\Lib\site-packages\requests\utils.py:361: size=1400 B (+1400 B), count=25 (+25), average=56 B
+Memory series (timestamp, rss_mb, uss_mb, gpu_allocated_mb, gpu_reserved_mb):
+(1760404887.548417, None, None, None, None)
+(1760404892.6093016, None, None, None, None)
+(1760404897.7990801, None, None, None, None)
+(1760404902.9257293, None, None, None, None)
+(1760404908.0628202, None, None, None, None)

@@ -1,0 +1,91 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Visual Studio Code files
+.vscode/
+
+# PyCharm files
+.idea/
+
+# Eclipse Project settings
+*.*project
+.settings/
+
+# Sublime Text settings
+*.sublime-workspace
+*.sublime-project
+
+# Editor temporaries
+*.swn
+*.swo
+*.swp
+*.swm
+*~
+
+# IPython notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS dir files
+.DS_Store
+
+# Temporary/Build directories
+/temp/
+/build/
+/dist/
+*build*/
+
+# Cache directories
+.cache/
+/hf_download/
+/py312/
+
+# Clangd files
+compile_commands.json
+
+# Train/Inference files
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+*.zip
+
+# Model & Pretrained
+pretrained_models/
+ssl_pretrained/
+bert_pretrained/
+GPT_SoVITS/text/G2PWModel/
+
+# Data & Logs
+/logs/
+/dataset_raw/
+/dataset/
+/output/
+/results/
+/assets_v1/
+/assets_v2/
+/webui_cache_path/
+
+# Audio/Video
+*.wav
+*.mp3
+*.flac
+*.mp4
+*.avi
+*.mkv
+
+# Python
+*.pyc
+.venv/
+venv/
+env/
+
+# System
+Thumbs.db
+
+# Protobuf generated
+*_pb2.py
+*_pb2_grpc.py
